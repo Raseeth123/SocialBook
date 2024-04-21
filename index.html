@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/d9f0abd257.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">Social Book</h2>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for creators,inspirations and projects">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post" >Create</label>
+                <div class="profile-photo">
+                    <img src="../images/profile-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="../images/profile-1.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Envy</h4>
+                        <p class="text-muted">
+                            @Envy
+                        </p>
+                    </div>
+                </a>
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="fa-solid fa-house"></i></span><h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-compass"></i></span><h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="fa-solid fa-bell"><small class="notification-count">9+</small></i></span><h3>Notifications</h3>
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="../images/profile-2.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Benjamin</b> accepted your friend request
+                                    <small class="text-muted"> 2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="../images/profile-3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>John Doe</b> commented on your post 
+                                    <small class="text-muted"> 1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="../images/profile-4.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Mary Oppong_M</b> and <b>283 Others</b> liked your post
+                                    <small class="text-muted"> 4 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="../images/profile-5.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Nemo Tom</b> commented on a post you are tagged in
+                                    <small class="text-muted"> 1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="../images/profile-6.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Jane Doe</b> commented on your post
+                                    <small class="text-muted"> 1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <a class="menu-item"  id="message-notifications">
+                        <span><i class="fa-solid fa-envelope"><small class="notification-count">6</small></i></span><h3>Message</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-bookmark"></i></span><h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-chart-simple"></i></span><h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span><i class="fa-solid fa-palette"></i></span><h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-gear"></i></span><h3>Settings</h3>
+                    </a>
+                </div>
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+           
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="../images/profile-8.jpg">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="../images/profile-9.jpg">
+                        </div>
+                        <p class="name">Chris Jones</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="../images/profile-10.jpg">
+                        </div>
+                        <p class="name">James Bond</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="../images/profile-11.jpg">
+                        </div>
+                        <p class="name">Tony Stark</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="../images/profile-12.jpg">
+                        </div>
+                        <p class="name">Bruce</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="../images/profile-13.jpg">
+                        </div>
+                        <p class="name">Wayne</p>
+                    </div>
+                </div>
+                <form class="create-post">
+                  <div class="profile-photo">
+                    <img src="../images/profile-1.jpg">
+                 </div>
+                <input type="text" placeholder="What's on your mind , Envy ?" id="create-post">
+                <input type="submit" value="POST" class="btn btn-primary">
+                </form>
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-8.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Rajesh Vicky</h3>
+                                    <small>India,5 MINUTES AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/raghu-nayyar-EpAq2EE-shg-unsplash.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>Naveen , Alex_Jerry</b> and <b> 2,232 Others</b></p>
+                        <div class="caption">
+                            <p><b>Rajesh Vicky</b> Let us be proud that we are born in India, the land of courage, sacrifice, and spirituality.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-14.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Venice,15 MINUTES AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>Ernest Achiever,Akash </b> and <b> 2,232 Others</b></p>
+                        <div class="caption">
+                            <p><b>Lana Rose</b> Style is the best way to say who you are without have to speak.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-15.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Tom</h3>
+                                    <small>United States,35 MINUTES AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/daniel-mav-wPVqVETFREE-unsplash.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>Alex_Jerry , Mr.Krish</b> and <b> 2,232 Others</b></p>
+                        <div class="caption">
+                            <p><b>Tom</b> Style is the best way to say who you are without have to speak.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-16.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Steve</h3>
+                                    <small>England,1 HOUR AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/ivan-ivankovic-M0uDTaOUZmw-unsplash.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>Lana Rose </b> and <b> 2,232 Others</b></p>
+                        <div class="caption">
+                            <p><b>Steve</b> Style is the best way to say who you are without have to speak.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+
+                    
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/raghu-nayyar-EpAq2EE-shg-unsplash.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Raseeth</h3>
+                                    <small>Dubai,1 HOUR AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/christoph-schulz-7tb-b37yHx4-unsplash.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>Sheik , Fayas </b> and <b> 2,232 Others</b></p>
+                        <div class="caption">
+                            <p><b>Raseeth </b> Style is the best way to say who you are without have to speak.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-8.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Chris</h3>
+                                    <small>Rome,2 HOUR AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/jack-ward-rknrvCrfS1k-unsplash.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>Ernest Achiever </b> and <b> 2,232 Others</b></p>
+                        <div class="caption">
+                            <p><b>Chris</b> Style is the best way to say who you are without have to speak.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-4.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Watson</h3>
+                                    <small>United States,3 HOUR AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>John </b> and <b> 2,032 Others</b></p>
+                        <div class="caption">
+                            <p><b>Watson</b> Style is the best way to say who you are without have to speak.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 10 comments</div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-10.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Jerry</h3>
+                                    <small>Malaysia,16 HOUR AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/josh-mcguigan-5RwM_ST58WA-unsplash.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>Watson </b> and <b> 2,232 Others</b></p>
+                        <div class="caption">
+                            <p><b>Jerry</b> Style is the best way to say who you are without have to speak.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+                   
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-8.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>John Wick</h3>
+                                    <small>Russia,2 HOUR AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/john.png">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>Winston </b> and <b> 2,232 Others</b></p>
+                        <div class="caption">
+                            <p><b>John Wick</b> Style is the best way to say who you are without have to speak.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-10.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Chris Hemsworth</h3>
+                                    <small>Mexico,2 HOUR AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/jake-blucker-tMzCrBkM99Y-unsplash.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>God_Of_Thunder , Jane_Froster </b> and <b> 2,232 Others</b></p>
+                        <div class="caption">
+                            <p><b>Chris Hemsworth</b> Style is the best way to say who you are without have to speak.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+                    
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-10.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Gaddafi Rusli</h3>
+                                    <small>Phillipines,3 HOUR AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="../images/gaddafi-rusli-2ueUnL4CkV8-unsplash.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="../images/profile-15.jpg"></span>
+                            <span><img src="../images/profile-2.jpg"></span>
+                            <span><img src="../images/profile-14.jpg"></span>
+                        </div>
+                        
+                        <p>liked by <b>Chris Hemsworth </b> and <b> 2,232 Others</b></p>
+                        <div class="caption">
+                            <p><b>Gaddafi Rusli</b> Style is the best way to say who you are without have to speak.<span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="../images/profile-2.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Edem Quist</h5>
+                            <p class="text-muted">Just woke up bruh</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="../images/profile-3.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Nova</h5>
+                            <p class="text-muted">Happy Birthday!</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="../images/profile-8.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Rambo</h5>
+                            <p class="text-muted">Can we go for a ride?</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="../images/profile-9.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Dalmetha</h5>
+                            <p class="text-muted">Hii, How are you?</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="../images/profile-1.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Princess</h5>
+                            <p class="text-muted">Will you be coming to college tomorrow?</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="../images/raghu-nayyar-EpAq2EE-shg-unsplash.jpg">
+                            </div>
+                            <div>
+                                <h5>
+                                    Raseeth
+                                </h5>
+                                <p class="text-muted">
+                                    35 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="../images/profile-14.jpg">
+                            </div>
+                            <div>
+                                <h5>
+                                    Jackie
+                                </h5>
+                                <p class="text-muted">
+                                    35 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="../images/profile-15.jpg">
+                            </div>
+                            <div>
+                                <h5>
+                                    Nethen
+                                </h5>
+                                <p class="text-muted">
+                                    58 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">Manage your font size, color , and background.</p>
+            <div class="font-size">
+                <h4>Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <div class="color">
+                <h4> Color</h4>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/socialmedia.js"></script>
+</body>
+</html>
